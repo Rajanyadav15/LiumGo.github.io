@@ -11,7 +11,7 @@ body {
   color: #333;
   font-family: Poppins, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 20px
 }
 
 h1 {
@@ -4476,6 +4476,61 @@ figure {
 }
 
 @media screen and (min-width: 1280px) {
+
+  .highway{
+    height: 100px;
+    width: 500%;
+    display: block;
+    background-image: url(../images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+  }
+  
+  @keyframes highway{
+    100%{
+      transform: translateX(-3400PX);
+    }
+  }
+  
+  .city{
+    height: 250px;
+    width: 500%;
+    background-image: url(../images/city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+  }
+  
+  @keyframes city{
+    100%{
+      transform: translateX(-1400px);
+    }
+  }
+  
+  .car{
+    width: 200px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    background-repeat: repeat-x;
+    animation: car 20s linear infinite;
+  }
+  
+  .car img{
+    width: 100%;
+  }
   .steps-grid {
     grid-column-gap: 100px;
     grid-template-columns: .8fr 1fr;
@@ -4640,6 +4695,8 @@ figure {
 }
 
 @media screen and (max-width: 991px) {
+
+
   h1 {
     font-size: 42px;
   }
@@ -5313,6 +5370,61 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+
+  .highway{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(../images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+  }
+  
+  @keyframes highway{
+    100%{
+      transform: translateX(-3400PX);
+    }
+  }
+  
+  .city{
+    height: 250px;
+    width: 500%;
+    background-image: url(../images/city.png);
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+  }
+  
+  @keyframes city{
+    100%{
+      transform: translateX(-1400px);
+    }
+  }
+  
+  .car{
+    width: 100px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    background-repeat: repeat-x;
+    animation: car 20s linear infinite;
+  }
+  
+  .car img{
+    width: 100%;
+  }
   h1 {
     font-size: 38px;
   }
